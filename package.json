@@ -4,16 +4,42 @@
   "description": "Curriculum for React.js Program's React Fundamentals course.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --watch --require setup.js app/**/*.spec.js",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ReactjsProgram/react-fundamentals-curriculum.git"
+    "url": "git+https://github.com/DiegoCardoso/react-fundamentals-curriculum.git"
   },
-  "author": "Tyler McGinnis <tylermcginnis33@gmail.com> (http://tylermcginnis.com)",
-  "license": "ISC",
+  "author": "Diego Cardoso <diegopc86@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ReactjsProgram/react-fundamentals-curriculum/issues"
+    "url": "https://github.com/DiegoCardoso/react-fundamentals-curriculum/issues"
   },
-  "homepage": "https://github.com/ReactjsProgram/react-fundamentals-curriculum#readme"
+  "homepage": "https://github.com/DiegoCardoso/react-fundamentals-curriculum#readme",
+  "dependencies": {
+    "aphrodite": "^0.3.3",
+    "axios": "^0.11.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "html-webpack-plugin": "^2.19.0",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
+    "sinon": "^1.17.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "keywords": [
+    "react"
+  ]
 }
